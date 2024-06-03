@@ -1,14 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 header {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f5a623, #f76b1c);
+    color: white;
 }
 
 header h1 {
@@ -27,6 +30,14 @@ main {
 
 .intro, .features, .usage, .how-it-works, .cta, .shop {
     margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #f76b1c;
 }
 
 .features ul, .usage ul, .how-it-works ol {
@@ -36,6 +47,15 @@ main {
 
 .features li, .usage li, .how-it-works li {
     margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.features li::before, .usage li::before, .how-it-works li::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    color: #f76b1c;
 }
 
 .gallery {
@@ -49,6 +69,11 @@ main {
     max-width: 30%;
     margin: 10px;
     text-align: center;
+    background: #f5a623;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.2s;
 }
 
 .item img {
@@ -63,18 +88,24 @@ main {
     transform: scale(1.05);
 }
 
+.item:hover {
+    background: #f76b1c;
+    transform: scale(1.05);
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #f76b1c;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #f5a623;
 }
 
 .lightbox {
