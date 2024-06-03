@@ -22,3 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+    closeBtn.addEventListener('click', function() {
+        lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', function(e) {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = 'none';
+        }
+    });
+});
