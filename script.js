@@ -17,19 +17,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     lightbox.addEventListener('click', function(e) {
-        if (e.target !== lightboxImg) {
-            lightbox.style.display = 'none';
-        }
-    });
-});
-
-    closeBtn.addEventListener('click', function() {
-        lightbox.style.display = 'none';
-    });
-
-    lightbox.addEventListener('click', function(e) {
-        if (e.target !== lightboxImg) {
-            lightbox.style.display = 'none';
-        }
-    });
-});
+        if (e.target
